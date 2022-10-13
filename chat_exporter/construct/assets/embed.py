@@ -21,8 +21,6 @@ from chat_exporter.ext.html_generator import (
 
 
 def _gather_checker():
-    if hasattr(discord.Embed, "Empty") and (discord.__title__ != "nextcord" or discord.__version__ < 2.2):
-        return discord.Embed.Empty
     return None
 
 
